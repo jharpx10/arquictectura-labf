@@ -1,0 +1,7 @@
+com\udea\empleado\exception\ModelNotFoundException.class
+com\udea\empleado\dao\IPersonaDAO.class
+com\udea\empleado\controller\PersonaController.class
+com\udea\empleado\service\PersonaService.class
+com\udea\empleado\Swagger2Config.class
+com\udea\empleado\EmpleadoApplication.class
+com\udea\empleado\model\Persona.class
