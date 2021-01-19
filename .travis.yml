@@ -6,6 +6,11 @@ services:
 - mysql
 dist: trusty
 sudo: required
+deploy:
+  provider: heroku
+  api_key:
+    secure: "a6db0b66-088d-49e8-8f89-a99b52c7a23b"
+     app: myaapp233f
 addons:
   apt:
     packages:
