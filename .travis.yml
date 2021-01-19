@@ -16,6 +16,6 @@ packages:
 before_script:
 - mysql -u root -e 'CREATE DATABASE empleado;'
 - mysql -u root -e "CREATE USER 'sa'@'localhost' IDENTIFIED BY 'sa';"
-- mysql -u root -e "GRANT ALL ON human.* TO 'sa'@'localhost';"
+- mysql -u root -e "GRANT ALL ON empleado.* TO 'sa'@'localhost';"
 before_install:
 - chmod +x mvnw
