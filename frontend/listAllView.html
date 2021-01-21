@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Gesti�n empleados</title>
+    <title>Gesti&oacute;n empleados</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -108,12 +108,12 @@
 
                               <th>Nombres</th>
                             <th>Apellidos</th>
-                            <th>Ocupación</th>
+                            <th>Ocupaci&oacute;n</th>
                             <th>Salario</th>
                             <th>Dirección</th>
                             <th>Oficina</th>
                             <th>Dependencia</th>
-                            <th>Años</th>
+                            <th>A&ntilde;os</th>
           </tr>
 
                     </thead>
@@ -121,7 +121,7 @@
 
 
         $.ajax({
-            url: 'http://192.168.1.2:8089/persona/listAll',
+            url: 'https://myaapp233f.herokuapp.com/persona/listAll',
             success: function (dev) {
                 console.log(dev);
 
@@ -177,12 +177,12 @@
                         <tr>
                             <th>Nombres</th>
                             <th>Apellidos</th>
-                            <th>Ocupación</th>
+                            <th>Ocupaci&oacute;n</th>
                             <th>Salario</th>
                             <th>Dirección</th>
                             <th>Oficina</th>
                             <th>Dependencia</th>
-                            <th>Años</th>
+                            <th>A&ntilde;os</th>
 
                         </tr>
                     </tfoot>`);
@@ -198,7 +198,7 @@
         function deleteE(id) {
             $.ajax({
                 type: "GET",
-                url: "http://192.168.1.2:8089/persona/delete/" + id,
+                url: "https://myaapp233f.herokuapp.com/persona/delete/" + id,
                 success: function () {
                     location.reload();
                 }
@@ -208,7 +208,7 @@
         function increase() {
             $.ajax({
                 type: "GET",
-                url: "http://192.168.1.2:8089/persona/increasesalary/",
+                url: "https://myaapp233f.herokuapp.com/persona/increasesalary/",
                 success: function () {
                     window.location.href = 'listAllView.html';
                 }

@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Gesti�n empleados</title>
+    <title>Gesti&oacute;n empleados</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
                 <a class="navbar-brand" href="/">
                     <img src="/img/logo(1).jpg" width="30" height="30"
                          class="d-inline-block align-top" alt="" loading="lazy">
-                    GESTIÓN EMPLEADOS
+                    GESTI&Oacute;N EMPLEADOS
                 </a>
             </li>
            
@@ -61,8 +61,8 @@
 
             <div class="form-group">
                 <div class="form-inline">
-                    <label for="name">Ocupaci�n</label>
-                    <input type="text" class="form-control" name="occupation" id="occupation" placeholder="Ocupaci�n" />
+                    <label for="name">Ocupaci&oacute;n</label>
+                    <input type="text" class="form-control" name="occupation" id="occupation" placeholder="Ocupaci&oacute;n" />
                 </div>
             </div>
 
@@ -75,8 +75,8 @@
 
             <div class="form-group">
                 <div class="form-inline">
-                    <label for="name">Direcci�n</label>
-                    <input type="text" class="form-control" name="address" id="address" placeholder="Direcci�n" autofocus />
+                    <label for="name">Direcci&oacute;n</label>
+                    <input type="text" class="form-control" name="address" id="address" placeholder="Direcci&oacute;n" autofocus />
                 </div>
             </div>
 
@@ -97,8 +97,8 @@
 
             <div class="form-group">
                 <div class="form-inline">
-                    <label for="name">A�os</label>
-                    <input type="number" class="form-control" name="years" id="years" placeholder="A�os en la empresa" />
+                    <label for="name">A&ntilde;os</label>
+                    <input type="number" class="form-control" name="years" id="years" placeholder="A&ntilde;os en la empresa" />
                 </div>
             </div>
 
@@ -113,7 +113,7 @@
         function increase() {
             $.ajax({
                 type: "GET",
-                url: "http://192.168.1.2:8089/persona/increasesalary/",
+                url: "https://myaapp233f.herokuapp.com/persona/increasesalary/",
                 success: function () {
                     window.location.href = 'listAllView.html';
                 }
@@ -145,7 +145,7 @@
 
             $.ajax({
                 type: "POST",
-                url: "http://192.168.1.2:8089/persona/save",
+                url: "https://myaapp233f.herokuapp.com/persona/save",
                 data: json2,
                 success: function () { },
                 dataType: "json",
